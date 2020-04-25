@@ -4,19 +4,39 @@ agent any
 stages{
 	stage('Build') {
 			steps{
-				bat echo "executing build job"
+				 echo "executing build job"
 			}
 
 		}
 		stage('Deploy to Dev'){
 		steps{
-			bat echo "executing Deploy to Dev"
+		 echo "executing Deploy to Dev"
 			}
 		}
 		stage('Unit tests'){
 		steps{
-			bat echo "run unit tests"
+			 echo "run unit tests"
 			}
+		}
+		stage('Deploy to Dev1'){
+		steps{
+		    echo "adding extra job1"
+		}
+		}
+		stage('Today is raining pretty good'){
+		steps{
+		echo "adding extra job2"
+		}
+		}
+		stage('lets play some game'){
+		steps{
+		    echo "adding extra job3"
+		}
+		}
+		stage('java is good when you know it'){
+		steps{
+		echo "adding extra job4"
+		}
 		}
 	}
 }
