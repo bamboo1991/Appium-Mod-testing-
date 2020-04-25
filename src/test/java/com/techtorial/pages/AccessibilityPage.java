@@ -11,9 +11,6 @@ public class AccessibilityPage {
 
     private AndroidDriver<AndroidElement> driver;
 
-    public AccessibilityPage() {
-    }
-
     public AccessibilityPage(AndroidDriver<AndroidElement> driver) {
         this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);

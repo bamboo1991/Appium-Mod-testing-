@@ -1,0 +1,25 @@
+pipiline {
+	
+agent any
+stages{
+	stage('Build') {
+			steps{
+				bat echo "executing build job"
+			}
+
+		}
+		stage('Deploy to Dev'){
+		steps{
+			bat echo "executing Deploy to Dev"
+			}
+		}
+		stage('Unit tests'){
+		steps{
+			bat echo "run unit tests"
+			}
+		}
+	}
+}
+
+
+
